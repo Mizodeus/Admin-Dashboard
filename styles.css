@@ -6,3 +6,21 @@
 body {
     font-family: system-ui, Roboto;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+
+}
+
+.sidebar {
+
+}
+
+.content {
+    
+}
