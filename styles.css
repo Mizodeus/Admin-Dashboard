@@ -14,13 +14,45 @@ body {
 }
 
 .header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
 
+button.nav {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 50px;
+    height: auto;
+}
+
+.avatar--big {
+    width: 75px;
+    height: auto;
 }
 
 .sidebar {
 
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav svg {
+    width: 25px;
+    height: auto;
+}
+
 .content {
-    
+
 }
