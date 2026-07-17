@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -11,10 +12,11 @@
 
 body {
     font-family: system-ui, Roboto;
+    height: 100vh;
 }
 
 .container {
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: 250px 1fr;
     grid-template-rows: 70px 1fr;
@@ -113,8 +115,9 @@ button.nav {
 .logo__wrapper .logo-title {
     padding-left: 0.5rem;
     color: var(--primary-color);
+    font-size: 1.3rem;
     font-weight: bold;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.3em;
 }
 
 .sidebar {
@@ -165,8 +168,123 @@ button.nav {
 
 .menu-title {
     color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .content {
+    background: #000000;
+    height: 100%;
+}
 
+.content__wrapper {
+    height: 100%;
+    padding: 1.75rem;
+
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 1.75rem;
+}
+
+.card {
+    background: var(--menu-color);
+}
+
+.content__wrapper--left {
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    gap: 1.75rem;
+}
+
+.content__wrapper--right {
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.75rem;
+}
+
+.content-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.content-item .content {
+    height: 100%;
+}
+
+.content-item .item-name {
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+}
+
+.content-item .item-wrapper {
+    padding: 2rem;
+}
+
+.content__wrapper .greeting-card {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar--left {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar--left .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.navbar--left .greeting {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.navbar--left .userName {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar--right {
+    padding-right: 40px;
+}
+
+.navbar--right .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar--right .navbar-nav .nav-item .nav-link {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.navbar--right .navbar-nav .nav-item .nav-link svg {
+    height: 2rem;
+    width: auto;
+}
+
+.content-item__wrapper {
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.5rem;
 }
