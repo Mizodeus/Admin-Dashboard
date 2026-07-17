@@ -315,3 +315,59 @@ button.nav {
     display: flex;
     justify-content: end;
 }
+
+.content__wrapper--right .anouncements {
+    height: 100%;
+    
+    display: grid;
+    grid-template-rows: 1fr 1px 1fr 1px 1fr;
+    gap: 0.5rem;
+}
+
+.content__wrapper--right .trending {
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+}
+
+.trending, .anouncements {
+    padding: 1rem 2rem;
+}
+
+.anouncements .item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.anouncements .item-name.small {
+    padding: 0;
+}
+
+.anouncements .item-description.small {
+    padding: 0;
+    color: var(--primary-color);
+
+}
+
+.divider {
+    height: 1px;
+    background: var(--secondary-color);
+}
+
+.trending .user-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trending .user-card .userName {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.trending .user-card .userDesc {
+    color: var(--primary-color);
+}
